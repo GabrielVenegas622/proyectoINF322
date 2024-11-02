@@ -1,0 +1,19 @@
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; /* Centra las imágenes dentro de sus celdas */
+  }
+  
+.image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+.image-grid img:hover {
+    transform: scale(1.1);
+  }
