@@ -10,8 +10,8 @@ const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
-        <h1 className='layout__title'>Interfaz energética</h1>
         <NavBar />
+        <center><h1 className='layout__title'>Bienvenido!</h1></center>
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />
