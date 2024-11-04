@@ -1,8 +1,17 @@
+/* Tamaño del contenedor principal */
+.grid-wrapper {
+  width: 700px; /* Ajusta el tamaño del contenedor a tus necesidades */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: fit-content;
     justify-items: center; /* Centra las imágenes dentro de sus celdas */
   }
   

@@ -1,0 +1,27 @@
+.vertical-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: flex-start; /* Alinea al inicio verticalmente */
+    width: 300px;           /* Ancho del contenedor, ajusta según tus necesidades */
+    border: 1px solid #ccc; /* Opcional: borde para visualizar el contenedor */
+    padding: 10px;         /* Espaciado interno */
+    margin: 20px auto;     /* Centra el contenedor horizontalmente en la página */
+}
+
+.vertical-image {
+    width: 100%;           /* Ajusta la imagen al ancho del contenedor */
+    height: auto;          /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.vertical-text {
+    margin-top: 10px;      /* Espacio entre la imagen y el texto */
+    text-align: center;     /* Centra el texto */
+}
+
+.vertical-image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    filter: brightness(1.1); /* Aumenta el brillo de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+}
