@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 12px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
+  background-color: #ccc; /* Opcional: borde para visualizar el contenedor */
 }
 
 .image-grid {
@@ -13,6 +15,8 @@
     gap: 20px;
     width: fit-content;
     justify-items: center; /* Centra las imágenes dentro de sus celdas */
+    background-color: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
+    
   }
   
 .image-grid img {
@@ -21,6 +25,8 @@
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
+    border: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
+    background-color: #e5ece8;
   }
 
 .image-grid img:hover {

@@ -2,8 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import fwStands from '../assets/feria-software.jpeg'
-import pist from '../assets/hasas_export_co_ltd_cover.jpg'
+import IATU from '../assets/IATU.png'
+import DialogApp from '../assets/DialogApp.png'
+import Canaria from '../assets/canaria.png'
+import GeoTMM from '../assets/GeoTMM.png'
+import QAGuarIAn from '../assets/qaguardian.png';
+import MineGuard from '../assets/mineguard.png';
+
+
 
 function stand() {
   return (
@@ -11,22 +17,22 @@ function stand() {
       <div className="grid-wrapper">
         <div className="image-grid">
           <Link to="/page/1">
-            <img src= {fwStands} alt="Image 1" />
+            <img src= {IATU} alt="Image 1" />
           </Link>
           <Link to="/page/2">
-            <img src={pist} alt="Image 2" />
+            <img src={DialogApp} alt="Image 2" />
           </Link>
           <Link to="/page/3">
-            <img src={fwStands} alt="Image 3" />
+            <img src={Canaria} alt="Image 3" />
           </Link>
           <Link to="/page/4">
-            <img src={pist} alt="Image 4" />
+            <img src={GeoTMM} alt="Image 4" />
           </Link>
           <Link to="/page/5">
-            <img src={fwStands} alt="Image 5" />
+            <img src={QAGuarIAn} alt="Image 5" />
           </Link>
           <Link to="/page/6">
-            <img src={pist} alt="Image 6" />
+            <img src={MineGuard} alt="Image 6" />
           </Link>
         </div>
       </div>
