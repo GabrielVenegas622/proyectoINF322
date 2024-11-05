@@ -1,19 +1,24 @@
 import React from 'react'
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import carga from '../assets/logo_de_carga.jpeg'
 
 import "../stylesheets/trial/index.scss"
 
 const trial = ({num}) => {
-
+    // Usamos useParams para obtener el parámetro de la ruta
+    const { imageId } = useParams();
+    num = imageId
+    // Imprimir el imageId en la consola
+    console.log('imageId:', imageId);
     const names = {
-        1: "feriaSoftware",
-        2: "hasasExport",
-        3: "feriaSoftware",
-        4: "hasasExport",
-        5: "feriaSoftware",
-        6: "hasasExport"
+        1: "IATU",
+        2: "DialogApp",
+        3: "Canaria",
+        4: "GeoTMM",
+        5: "QAGuarIAn",
+        6: "MineGuard"
     }
 
     const [message, setMessage] = useState('');
@@ -38,8 +43,8 @@ const trial = ({num}) => {
 
     return(
         <div className='encabezado'>
-            <h1>{names[num]}texto</h1>
-            <div className='trial-image'>
+            <h1>{names[num]}</h1>
+            <div className='horizontal-container'>
                 <img src= {carga} alt="imagen de carga"/>
                 <div className="chat-bar">
                     {/* Área de mensajes */}
@@ -51,7 +56,7 @@ const trial = ({num}) => {
                     ))}
                     </div>
             
-                    {/* Barra de entrada de mensaje */}
+                    {/* Barra de entrada de mensaje */}Contacta con nosotros!
                     <div className="input-bar">
                     <input
                         type="text"
