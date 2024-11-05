@@ -13,7 +13,6 @@ const Layout = () => {
     <BrowserRouter>
       <div className='layout'>
         <NavBar />
-        <center><h1 className='layout__title'>Bienvenido!</h1></center>
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />

@@ -28,6 +28,14 @@ const VideoRedirectButton = ({ videoIndex }) => {
 };
 
 const Img_text_card = ({ num, altText}) => {
+    const names = {
+        1: "feriaSoftware",
+        2: "hasasExport",
+        3: "feriaSoftware",
+        4: "hasasExport",
+        5: "feriaSoftware",
+        6: "hasasExport"
+    }
     const images = {
         1: feriaSoftware,
         2: hasasExport,
@@ -60,11 +68,10 @@ const Img_text_card = ({ num, altText}) => {
     return (
     <div className="vertical-container">
         <div className="horizontal-container">
-
-            <img src={images[num]} alt={altText} className="proyect-image" />
-            <p className="proyect-text">{text[num]}</p>
+        <img src={images[num]} alt={altText} className="proyect-image" style={{marginRight: '50px'}}/> 
+        <h1 className='layout__title'>{names[num]}</h1>
         </div>
-        <div className="horizontal-container">
+        <div className="horizontal-container" style={{gap: '50px'}}>
             <div class="video-container">
                 <iframe 
                     src={linkVid[num]}
@@ -73,6 +80,10 @@ const Img_text_card = ({ num, altText}) => {
                     allowfullscreen>
                 </iframe>
             </div>
+            <p className="proyect-text">{text[num]}</p>
+        </div>
+    <center>
+        <div className='horizontal-container' >
             <div className='button-container'>
                 <Link to= "./proyect"> {/* Envolvemos la imagen en un Link */}
                 <button > PROBAR APP</button>
@@ -81,6 +92,8 @@ const Img_text_card = ({ num, altText}) => {
                 <VideoRedirectButton videoIndex={num} /> {/* Cambia el índice según el video que quieras redirigir */}
             </div>
         </div>
+    </center>
+    
     
     </div>
  

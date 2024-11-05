@@ -1,11 +1,12 @@
 .button-container {
     display: flex;
-    flex-direction: column; /* Coloca los botones en columna */
+    gap: 100px;
+    flex-direction: row; /* Coloca los botones en columna */
     flex-grow: 1;
     align-items: center;    /* Centra los botones horizontalmente */
-    justify-content: center; /* Centra los botones verticalmente */       /* Asegúrate de que el contenedor tenga altura para centrar verticalmente */
-    width: 200px;
-    margin-left: 50px;      /* Espacio entre el video y los botones */
+    justify-content: space-between; /* Centra los botones verticalmente */       /* Asegúrate de que el contenedor tenga altura para centrar verticalmente */
+    width: auto;
+    //margin-left: 50px;      /* Espacio entre el video y los botones */
 }
 
 .button-container button {
@@ -18,7 +19,8 @@
     color: white; /* Color del texto */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
-    width: 120px, // Establece un ancho fijo para todos los botones
+    width: 200px; // Establece un ancho fijo para todos los botones
+    height: 80px;
 }
 
 .button-container button:hover {
