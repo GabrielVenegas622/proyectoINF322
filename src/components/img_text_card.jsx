@@ -85,7 +85,7 @@ const Img_text_card = ({ num, altText}) => {
     <center>
         <div className='horizontal-container' >
             <div className='button-container'>
-                <Link to= "./proyect"> {/* Envolvemos la imagen en un Link */}
+                <Link to= "./trial"> {/* Envolvemos la imagen en un Link */}
                 <button > PROBAR APP</button>
                 </Link>
 

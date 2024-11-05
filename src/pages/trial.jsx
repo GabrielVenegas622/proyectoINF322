@@ -5,7 +5,16 @@ import carga from '../assets/logo_de_carga.jpeg'
 
 import "../stylesheets/trial/index.scss"
 
-function trial() {
+const trial = ({num}) => {
+
+    const names = {
+        1: "feriaSoftware",
+        2: "hasasExport",
+        3: "feriaSoftware",
+        4: "hasasExport",
+        5: "feriaSoftware",
+        6: "hasasExport"
+    }
 
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
@@ -28,33 +37,35 @@ function trial() {
     };
 
     return(
-        <div className='trial-image'>
-            <img src= {carga} alt="imagen de carga"/>
-            <div className="chat-bar">
-                {/* Área de mensajes */}
-                <div className="messages">
-                {messages.map((msg, index) => (
-                    <div key={index} className="message">
-                    {msg}
+        <div className='encabezado'>
+            <h1>{names[num]}texto</h1>
+            <div className='trial-image'>
+                <img src= {carga} alt="imagen de carga"/>
+                <div className="chat-bar">
+                    {/* Área de mensajes */}
+                    <div className="messages">
+                    {messages.map((msg, index) => (
+                        <div key={index} className="message">
+                        {msg}
+                        </div>
+                    ))}
                     </div>
-                ))}
-                </div>
-        
-                {/* Barra de entrada de mensaje */}
-                <div className="input-bar">
-                <input
-                    type="text"
-                    placeholder="Escribe tu mensaje..."
-                    value={message}
-                    onChange={handleInputChange}
-                    onKeyDown={handleKeyDown}
-                />
-                <button onClick={handleSend}>Enviar</button>
+            
+                    {/* Barra de entrada de mensaje */}
+                    <div className="input-bar">
+                    <input
+                        type="text"
+                        placeholder="Escribe tu mensaje..."
+                        value={message}
+                        onChange={handleInputChange}
+                        onKeyDown={handleKeyDown}
+                    />
+                    <button onClick={handleSend}>Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-        
     );
-}
+};
 
 export default trial;
