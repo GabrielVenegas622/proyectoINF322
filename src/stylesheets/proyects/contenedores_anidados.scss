@@ -1,18 +1,17 @@
 .horizontal-container {
     display: flex;
     flex-direction: row; 
-    align-items: stretch;  
-    align-content: stretch;
-    justify-content: flex-start; /* Alinea al inicio verticalmente */
+    align-items: center;  
+    align-content: space-between;
+    justify-content: space-between; /* Alinea al inicio verticalmente */
     width: auto;           /* Ancho del contenedor, ajusta según tus necesidades */
     max-width: 1200px;  
-    border: 1px solid #ccc; /* Opcional: borde para visualizar el contenedor */
+    border: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
     padding: 10px;         /* Espaciado interno */
     margin: 20px auto;     /* Centra el contenedor horizontalmente en la página */
-    background-color: #ccc;
+    background-color: #e5ece8;
     margin-left: 10px;  /* Sin margen izquierdo */
     margin-right: auto; /* Margen derecho automático para empujar a la izquierda */
-    overflow: hidden;
     
 }
 
@@ -23,9 +22,10 @@
     justify-content: flex-start; /* Alinea al inicio verticalmente */
     width: 100%;           /* Ancho del contenedor, ajusta según tus necesidades */
     max-width: 1200px;  
-    border: 1px solid #ccc; /* Opcional: borde para visualizar el contenedor */
+    border: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
     padding: 10px;         /* Espaciado interno */
     margin: 20px auto;     /* Centra el contenedor horizontalmente en la página */
-    background-color: #ccc;
+    border-radius: 15px;
+    background-color: #e5ece8;
     
 }

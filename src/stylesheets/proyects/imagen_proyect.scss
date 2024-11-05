@@ -1,9 +1,11 @@
 
 .proyect-image {
-    height: 400px;          /* Mantiene la proporción de la imagen */
+    height: 200px;          /* Mantiene la proporción de la imagen */
     transition: transform 0.3s ease, filter 0.3s ease;
-    width: 600px;
-    border-radius: 20px; /* Bordes redondeados */
+    width: 200px;
+    border-radius: 150px; /* Bordes redondeados */
+    margin-right: auto;
+    object-fit: cover;
     
 }
 

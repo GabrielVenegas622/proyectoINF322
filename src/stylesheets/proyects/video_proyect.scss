@@ -1,12 +1,13 @@
 .video-container {
     position: relative;
     padding-bottom: 0%; /* Relación de aspecto 16:9 */
-    height: 400px;  
+    height: 288px;  
     overflow: hidden;
     background: #000;
-    margin-left: 100px;
-    width: 600px;
-    border-radius: 20px; /* Bordes redondeados */
+    margin-left: 20px;
+    width: 512px;
+    border-radius: 15px; /* Bordes redondeados */
+    flex-shrink: 0
     
 }
 .video-container iframe {
