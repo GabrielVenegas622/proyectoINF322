@@ -23,6 +23,8 @@ const trial = ({num}) => {
 
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const [mostrarImagen, setMostrarImagen] = useState(false);
+
 
     const handleSend = () => {
         if (message.trim() !== '') {
@@ -41,11 +43,24 @@ const trial = ({num}) => {
         }
     };
 
+    const manejarClick = () => {
+        setMostrarImagen(!mostrarImagen); // Alterna la visibilidad de la imagen
+      };
+
     return(
         <div className='encabezado'>
             <h1>{names[num]}</h1>
-            <div className='horizontal-container'>
+            <div className='vertical-container'>
+                {mostrarImagen && (
                 <img src= {carga} alt="imagen de carga"/>
+                )}
+                <div className='button-container'>
+                <button onClick={manejarClick}>
+                    {mostrarImagen ? 'Ocultar Demo' : 'Probar Demo'}
+                </button>
+
+                </div>
+
                 <div className="chat-bar">
                     {/* Área de mensajes */}
                     <div className="messages">
