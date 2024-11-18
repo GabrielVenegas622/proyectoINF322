@@ -50,37 +50,43 @@ const trial = ({num}) => {
     return(
         <div className='encabezado'>
             <h1>{names[num]}</h1>
-            <div className='vertical-container'>
-                {mostrarImagen && (
-                <img src= {carga} alt="imagen de carga"/>
-                )}
-                <div className='button-container'>
-                <button onClick={manejarClick}>
-                    {mostrarImagen ? 'Ocultar Demo' : 'Probar Demo'}
-                </button>
-
-                </div>
-
-                <div className="chat-bar">
-                    {/* Área de mensajes */}
-                    <div className="messages">
-                    {messages.map((msg, index) => (
-                        <div key={index} className="message">
-                        {msg}
-                        </div>
-                    ))}
+            <div className='trial-container'>
+                <div className='trial-horizontal-container'>
+                    <div className='left'>
+                        <div className='trial-image'>
+                    {mostrarImagen && (
+                    <img src= {carga} alt="imagen de carga"/>
+                    )}
                     </div>
-            
-                    {/* Barra de entrada de mensaje */}Contacta con nosotros!
-                    <div className="input-bar">
-                    <input
-                        type="text"
-                        placeholder="Escribe tu mensaje..."
-                        value={message}
-                        onChange={handleInputChange}
-                        onKeyDown={handleKeyDown}
-                    />
-                    <button onClick={handleSend}>Enviar</button>
+                    <div className='trial-button-container'>
+                    <button onClick={manejarClick}>
+                        {mostrarImagen ? 'Ocultar Demo' : 'Probar Demo'}
+                    </button>
+                        </div>
+                    </div>
+                    <div className='rigt'>
+                    <div className="chat-bar">
+                        {/* Área de mensajes */}
+                        <div className="messages">
+                        {messages.map((msg, index) => (
+                            <div key={index} className="message">
+                            {msg}
+                            </div>
+                        ))}
+                        </div>
+                
+                        {/* Barra de entrada de mensaje */}Contacta con nosotros!
+                        <div className="input-bar">
+                        <input
+                            type="text"
+                            placeholder="Escribe tu mensaje..."
+                            value={message}
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}
+                        />
+                        <button onClick={handleSend}>Enviar</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,64 @@
+.trial-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: flex-start; /* Alinea al inicio verticalmente */
+    width: 100%;           /* Ancho del contenedor, ajusta según tus necesidades */
+    max-width: 1000px;  
+    border: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
+    padding: 10px;         /* Espaciado interno */
+    margin: 20px auto;     /* Centra el contenedor horizontalmente en la página */
+    border-radius: 15px;
+    background-color: #e5ece8;
+    
+}
+
+.trial-horizontal-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;  
+    justify-content: flex-end; /* Empuja los elementos hacia el borde inferior */
+    width: 100%;
+    max-width: 950px;
+    border: 1px solid #e5ece8; /* Opcional: borde para visualizar el contenedor */
+    padding: 10px;         /* Espaciado interno */
+    margin: 20px auto;     /* Centra el contenedor horizontalmente en la página */
+    background-color: #e5ece8;
+    margin-left: 10px;  /* Sin margen izquierdo */
+    margin-right: auto; /* Margen derecho automático para empujar a la izquierda */
+    
+}
+
+.trial-button-container {
+    display: flex;
+    gap: 100px;
+    flex-direction: row; /* Coloca los botones en columna */
+    flex-grow: 1;
+    margin-left: 20%;
+    align-items:end;    /* Centra los botones horizontalmente */
+    justify-content: space-between; /* Centra los botones verticalmente */       /* Asegúrate de que el contenedor tenga altura para centrar verticalmente */
+    width: auto;
+    //margin-left: 50px;      /* Espacio entre el video y los botones */
+}
+
+.trial-button-container button {
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #007BFF; /* Color de fondo */
+    align-items: center;
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+    width: 200px; // Establece un ancho fijo para todos los botones
+    height: 80px;
+}
+
+.trial-button-container button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+
+.left, .right {
+    display: inline-block;
+    width: 50%;
+}

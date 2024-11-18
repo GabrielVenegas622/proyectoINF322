@@ -1,7 +1,21 @@
 .layout__subtitle {
-    font-size: 24pt;
+    color :rgb(8, 8, 8);
+    font-size: 34pt;
     margin: 0;
     padding: 10px;
-    color: rgb(136, 136, 136)
+    font-weight: bold;
   }
+
+.layout__text {
+  color :rgb(131, 129, 129);
+  font-size: 14pt;
+  margin: 0;
+  padding: 5px;
+}
+
+.layout__mid-text {
+  color :rgb(87, 85, 85);
+  font-size: 18pt;
+  margin: 0;
+}
   
