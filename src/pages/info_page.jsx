@@ -12,7 +12,7 @@ export const HomePage = () => {
         <div className="contenedorInfo">
             <div className="columnaInfo"><img src={fwStands} width={480} height={480} alt='ñau' style={{ borderRadius: '5px' }}/></div>
             <div className="columnaInfo">  
-                <h2 style={{float:'left'}}>La feria de software se llevará desde el 4 hasta el 8 de Noviembre. Los prototipos estarán disponibles las 24hrs
+                <h2 style={{float:'left'}}>Viernes 15 de Noviembre 11:30 a 17:00 hrs Campus San Joaquín USM. <br></br>Sin embargo, puedes visitar la versión online desde el 11 hasta el 14 de Noviembre. Los prototipos estarán disponibles las 24hrs
                     durante la semana, no obstante, para comunicarse con los equipos respectivos y recibir una guía, el chat estará habilitado entre las 10:00hrs y las 16:00hrs.
                     <br></br>
                     <br></br>
