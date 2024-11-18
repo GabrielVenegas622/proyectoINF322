@@ -1,0 +1,10 @@
+.contenedorInfo {
+    display: grid;           /* Usamos flexbox */
+    margin: 0;
+    grid-template-columns: 40% 50%;    /* La primera columna ocupa el 60% y la segunda el 40% */
+    //justify-content:;  /* Distribuye el espacio entre las columnas */
+  }
+  
+  .columnaInfo {
+    padding: 1px;
+  }

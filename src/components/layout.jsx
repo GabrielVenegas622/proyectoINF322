@@ -7,6 +7,7 @@ import ImagePage from '../pages/proyect_page'
 import ImageFESW from '../assets/fsw160.png'
 import Stand from '../pages/stand'
 import Trial from '../pages/trial'
+import Info from '../pages/info_page'
 
 import NavBar from '../components/nav_bar'
 
@@ -23,6 +24,7 @@ const Layout = () => {
             <Route path='/' element={<HomePage />} />
             <Route path='/lightbulb' element={<LightbulbPage />} />
             <Route path="/page" element={<Stand />} />
+            <Route path="/info" element={<Info />} />
             <Route path="/page/:imageId" element={<ImagePage />} />
             <Route path="/page/:imageId/trial" element={<Trial />}/>
           </Routes>

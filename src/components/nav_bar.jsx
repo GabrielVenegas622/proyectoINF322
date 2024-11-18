@@ -21,6 +21,13 @@ export const NavBar = () => {
       >
         Stands
       </NavLink>
+
+      <NavLink
+        className={navLinkClass}
+        to='/info'
+      >
+        Información
+      </NavLink>
     </nav>
   )
 }
