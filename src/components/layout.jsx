@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/home_page'
 import LightbulbPage from '../pages/lightbulb_page'
 import ImagePage from '../pages/proyect_page'
+import ImageFESW from '../assets/fsw160.png'
 import Stand from '../pages/stand'
 import Trial from '../pages/trial'
 
@@ -13,6 +14,9 @@ const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
+        <a href='/' className="top-right-link">
+          <img src={ImageFESW} alt="Imagen en esquina" className="top-right-image"/>
+        </a>
         <NavBar />
         <div className='layout__page'>
           <Routes>

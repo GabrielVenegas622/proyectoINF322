@@ -1,0 +1,18 @@
+/* Aseguramos que el body o el contenedor principal tenga una posición relativa */
+body {
+    position: relative;
+  }
+  
+  /* Estilo del enlace que contiene la imagen */
+  .top-right-link {
+    position: absolute; /* Posiciona el enlace absolutamente dentro del body */
+    top: 0;             /* 0 desde el borde superior */
+    right: 0;           /* 0 desde el borde derecho */
+    z-index: 1000;      /* Asegura que el enlace esté por encima de otros elementos */
+  }
+  
+  /* Estilo de la imagen */
+  .top-right-image {
+    width: 100px;        /* Puedes ajustar el tamaño de la imagen según lo necesites */
+    height: 100px;       /* Mantiene la relación de aspecto */
+  }
