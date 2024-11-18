@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import ImageFESW from '../assets/fesw80.png'
 
 export const NavBar = () => {
   const navLinkClass = ({ isActive }) => {
@@ -9,6 +10,9 @@ export const NavBar = () => {
   }
   return (
     <nav className='nav-bar'>
+        <a href='/' className="top-right-link">
+          <img src={ImageFESW} alt="Feria de software" className="top-right-image"/>
+        </a>
       <NavLink
         className={navLinkClass}
         to='/'

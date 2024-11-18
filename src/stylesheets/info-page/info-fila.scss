@@ -8,3 +8,17 @@
   .columnaInfo {
     padding: 1px;
   }
+
+  .button-stand {
+    margin: 30px 0; /* Espaciado entre los botones */
+    padding: 10px 15px; /* Espacio interno en los botones */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #007BFF; /* Color de fondo */
+    align-items: center;
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+    width: 200px; // Establece un ancho fijo para todos los botones
+    height: 80px;
+}
